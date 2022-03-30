@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAJ FITNESS</title>
+
+    <style>
+        body{
+            font-family:'Inter', sans-serif;
+            color:white;
+            margin:0px;
+            padding:0px;
+            background-image: url('gym.jpg');
+            
+        }
+        .left{
+            display:inline-block;
+            border:2px solid white;
+            position:absolute;
+            left:56px;
+            top:20px;
+        }
+        .mid{
+            display:block;
+            width:40%;
+            margin: 20px auto;
+           
+           border: 2px solid white;
+
+        }
+        .right
+        {
+            position:absolute;
+            right:34px;
+            top:20px;
+            float:right;
+          border:2px solid white;
+        }
+        .nav a
+        {
+            color:white;
+            text-decoration: none;
+            padding:5px;
+        }
+        .nav li{
+            display:inline-block;
+            font-size:16px;
+        }
+        .nav li a:hover,.nav li a.active{
+            text-decoration: underline;
+            color:grey;
+          
+        }
+        .left img{
+            width:100px;
+        }
+        .left div{
+            text-align: center;
+            line-height: 19px;
+            font-size: 20px;
+        }
+        .btn{
+            margin:0px 10px;
+            background-color: black;
+            color:white;
+            cursor:pointer;
+            padding:3px 4px;
+            border:2px solid Grey;
+            font-size:18px;
+            border-radius:10px;
+            font-family:'Inter', sans-serif;
+        }
+        .btn:hover{
+            background-color:rgb(109, 107, 107);
+        }
+        .conatiner{
+            border: 2px solid white;
+    margin: 104px 53px;
+    width: 36%;
+    padding: 55px 75px;
+    border-radius: 25px;
+        }
+        .form-group input{
+            text-align: center;
+    display: block;
+    width: 351px;
+    padding: 8px;
+    margin: 12px auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+        }
+        .container h1{
+            text-align: center;
+        }
+         .conatiner button{
+             display:block;
+             width:100px;
+             margin: auto;
+
+         }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+           <img src="logo.jpg" >
+            <div>FITNESS</div>
+        </div>
+        <!-- mid box for nav -->
+        <div class="mid">
+         <ul class="nav">
+             <li><a href="#" class="active">HOME</a></li>
+             <li><a href="#">ABOUT US</a></li>
+             <li><a href="#"> FITNESS CALCULATOR</a></li>
+             <li><a href="#">CONTACT US</a></li>
+         </ul>
+
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+          <button class="btn">Call Us</button>
+          <button class="btn">Email</button>
+
+        </div>
+
+    </header>
+    <div class="conatiner">
+        <h1>
+            Join The Best Gym of patna now
+        </h1>
+        <form action="noaction.php" >
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter Your Age">
+              </div>
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Enter Your Gender">
+              </div>
+              <div class="form-group">
+                <input type="text" name="name" placeholder="Enter Your Locality">
+              </div>
+              <button class="btn" >Submit</buuton>
+
+        </form>
+    </div>
+</body>
+</html>
